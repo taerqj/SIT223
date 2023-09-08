@@ -14,13 +14,11 @@ pipeline{
             }
             post{
                 success{
-                    echo "Successful Unit and Integration Tests"
                     mail to: "jabirtaerq@gmail.com",
                         subject: "Unit and Integration Tests",
                         body: "Successful Tests."
                 }
                 failure{
-                    echo "Failure in Unit and Integration Tests"
                     mail to: "jabirtaerq@gmail.com",
                         subject: "Unit and Integration Tests",
                         body: "Failed Tests."
@@ -39,13 +37,11 @@ pipeline{
             }
             post{
                 success{
-                    echo "Successful Security Scan"
                     mail to: "jabirtaerq@gmail.com",
                         subject: "Security Scan",
                         body: "Successful Scan."
                 }
                 failure{
-                    echo "Failure in Security Scan"
                     mail to: "jabirtaerq@gmail.com",
                         subject: "Security Scan",
                         body: "Failed Scan."
