@@ -28,7 +28,7 @@ pipeline{
         stage("Code Analysis")
         {
             steps{
-                echo "Running Code Analysis using SonarScanner"
+                echo "Running Code Analysis using SonarScanne"
             }
         }
         stage("Security Scan"){
